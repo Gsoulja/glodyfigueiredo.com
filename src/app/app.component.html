@@ -1,0 +1,357 @@
+<div class="container" >
+  <nav class="navbar navbar-expand-lg sticky-top bg-light" (scroll)="onWindowScroll();">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><img src="../assets/logo.png" class="img-fluid" alt="..."></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <button class="nav-link btn btn-outline-dark"  routerLinkActive="active" (click)="onClickScroll('me')" aria-current="page" href="#">About me</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-outline-dark" (click)="onClickScroll('skill')"  >My Skills</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-outline-dark" (click)="onClickScroll('work')" >Work Experience</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-outline-dark" (click)="onClickScroll('school')" >Education</button>
+          </li>
+          <li class="nav-item">
+            <button class="nav-link btn btn-outline-dark" (click)="onClickScroll('project')" >Personal Projects</button>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section  id="me" class="py-5">
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../assets/1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Explore New Way</h5>
+          <p>Dont be afraid to go where nobady go.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Be Free</h5>
+          <p>Enjoy your freedon to make the world a better place to live.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="../assets/3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Be Happy</h5>
+          <p>If you do what you love you will be always Happy.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  </section>
+  <section id="skill" class="py-5">
+  <div class="row">
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">
+        Programing Languages
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">HTML5/CSS</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">Javascript</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">JAVA</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">PHP</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">
+        Framework
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Spring Boot</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">Angular</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">CodeIgniter</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">
+        Tools
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Visual Studio Code</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">Intelij</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">GITLAB</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%"  aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">GIT</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">Linux</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-6">
+    <div class="card">
+      <div class="card-header">
+        DataBase
+      </div>
+      <div class="card-body">
+        <h5 class="card-title">Mysql</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">Oracle Database</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">Informix database</h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        <h5 class="card-title">MS Database </h5>
+        <div class="progress">
+          <div class="progress-bar" role="progressbar" aria-label="Basic example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  </div>
+  </section>
+  <!-- Section: Timeline -->
+<section id="work" class="py-5">
+  <ul class="timeline">
+ 
+    <li class="timeline-item mb-5">
+      <h5 class="fw-bold">SOFTWARE DEVELOPER – CELFOCUS</h5>
+      <p class="text-muted mb-2 fw-bold">21/02/2022 – Now Lisbon</p>
+      <p class="text-muted">
+        At Celfocus I am embedded in the euronext project Euronext NV (European New Exchange Technology) is a
+        European stock exchange with headquarters in Amsterdam and corporate headquarters in La Défense in
+        Greater Paris, operating markets in Amsterdam, Brussels, London, Lisbon, Dublin, Oslo and Paris. With
+        about 1,500 listed companies worth €4.1 trillion in market capitalization at the end of July 2019, Euronext is
+        the largest stock exchange in continental Europe.
+        I am working on a project based in Sweden with a team of 7 people.
+        My main tasks are:
+        Backend developer
+        Development of new features
+        Bug fixing
+        Finding the best solution to implement
+        Review code
+        Quality assurance
+        I have been working with the following technologies:
+        Angular 10, Java11, Spring Boot, Gitlab, Docker, CI/CD, HTML, CSS, JAVASCRIPT, TYPESCRIPT, MYSQL
+        Digital Financial and insurance activities https://www.celfocus.com/home/who-we-are
+        Lisbon, Portugal
+      </p>
+    </li>
+
+    <li class="timeline-item mb-5">
+      <h5 class="fw-bold">PROGRAMMER – CAPGEMINI ENGINEERINGe</h5>
+      <p class="text-muted mb-2 fw-bold">16/09/2019 – 21/02/2022 – Lisboa , Portugal</p>
+      <p class="text-muted">
+At Capgemini Engenharia I worked on the client's premises.
+In my first year from September 16, 2019 to September 16, 2020 I was inserted in the Altice project,
+integrating the bss-Business support system department with a team of 4 people
+My main tasks were :
+Give support to existing apps
+Solve problems in the system
+Develop script
+Integrate elastic search with internal applications
+Keep the systems running
+Database management
+Rest api development
+I worked with the following technologies:
+WORK EXPERIENCE
+Shell Script, Python, pearl, Java 8, PHP, Oracle Database, PL-SQL, Informix database Microsoft SQL
+Server Siebel CRM, Linux, Windows Server.
+Between 16-September 2020 and 21 February 2022 I changed departments, joining the CTI department .
+My main tasks were :
+Development of new functionalities
+Bug fixing
+Quality assurance
+Database management
+Keepi the system running
+During this period I worked with the following technologies:
+Java 8, Git Lab, Source Tre, Genesys SDK, JavaServer Page, htm, css, Java Script, Soap Services, DataTable,
+Oracle Database, PL-SQL, Informix database, Microsoft SQL Server, Siebel CRM, Linux, Windows Server.
+BSS and CTI Information and communication https://capgemini-engineering.com/pt/pt-pt/
+Lisbon, Portugal
+      </p>
+    </li>
+
+    <li class="timeline-item mb-5">
+      <h5 class="fw-bold">APPLICATION DEVELOPER – VISABEIRA GLOBAL SGPS</h5>
+      <p class="text-muted mb-2 fw-bold">02/02/2017 – 16/07/2017 – Viseu , Portugal</p>
+      <p class="text-muted">
+I was responsible for the development of a mobile application that would aggregate all CRM Visabeira,
+along with a chat that allowed employees of the group to communicate, and make requests for materials,
+or approve projects.
+I was part of a team of 3 people.
+My main tasks were:
+Architectural analysis and planning
+Mobile application development
+Program and develop rest API
+Database modeling
+I worked with the following technologies :
+Java, cordova, angular 7, ionic 2, html5, css3, javascript, PHP, Code igniter, mysql, bootstrap.
+BSS Information and communication https://visabeiraglobal.com/pt/home Portugal
+      </p>
+    </li>
+  </ul>
+</section>
+<!-- Section: Timeline -->
+<section  id="school" class="py-5">
+  <ul class="timeline">
+    <li class="timeline-item mb-5">
+      <h5 class="fw-bold">ENGENHARIA INFORMÁTICA – Escola Superior de Tecnologia e Gestão de Viseu</h5>
+      <p class="text-muted mb-2 fw-bold">15/09/2017 - NOW</p>
+      <p class="text-muted">
+        The Computer Engineering course favors a predominantly practical teaching model, contemplating the
+        application of the knowledge acquired in laboratory practices and a curricular project/internship. The
+        course aims to
+        Train qualified specialists for the competent exercise of a professional activity, able to properly apply the
+        Information and Communication Technologies (ICT), combining factors of technical, economic,
+        organizational and social nature;
+        To prepare future professionals to respond to the constant evolution of ICT and development
+        methodologies, as well as to the challenges posed by the highly competitive and globalized business
+        environment;
+        To train professionals who combine a high technical level with a strong capacity for human relationships,
+        so that graduates can easily fit into networked and collaborative work environments that are constantly
+        changing.
+        The Computer Engineering degree has the following professional outlets:
+
+        Analysis, planning and development of information systems;
+        Database administration and management;
+        Integration of computer systems in heterogeneous environments;
+        Planning, installation, configuration and management of complex communication systems and networks;
+        Administration, management and maintenance of systems or computer centers;
+        Consulting and auditing of Systems and Information Technology.
+        Field(s) of study
+        Information and Communication Technologies
+        EQF level 6 180 https://www.estgv.ipv.pt/estgv/index.php?v=10012
+      </p>
+    </li>
+
+    <li class="timeline-item mb-5">
+      <h5 class="fw-bold">PROFESSIONAL HIGHER TECHNICAL COURSES DEVELOPMENT FOR THE WEB AND MOBILE
+        DEVICES – Escola Superior de Tecnologia e gestão de Viseu</h5>
+      <p class="text-muted mb-2 fw-bold">15/09/2015 – 19/07/2017 </p>
+      <p class="text-muted">
+        Manage and develop projects aimed at the creation and development of IT solutions to be conveyed on the
+        Web or specifically on mobile devices, including the design of the respective interfaces and the production
+        of the contents to be included.
+        Main activities:
+        - Manage and develop projects, from business and requirements analysis to making the implemented
+        solutions available to the respective public, dealing autonomously with the technologies involved
+        - Developing computer solutions for the Web and suitable for different devices that allow access to it
+        - Develop software applications to run natively on mobile devices
+        - Design interfaces respecting principles of graphic design, guidelines and specific standards, and so that
+        they are not only usable but also enjoyable from the point of view of interaction
+        - Develop the content to be included in the implemented solutions, in terms of image, video, sound and
+        interactive elements, eventually involving the design and implementation of the corporate image of the
+        identity involved
+        Field(s) of study
+        Information and Communication Technologies
+        EQF level 5 ECTS 120 https://www.estgv.ipv.pt/estgv/index.php?v=10012
+      </p>
+    </li>
+  </ul>
+</section>
+<section id = "project" class="py-5">
+<div class="card-group">
+  <div class="card">
+    <img src="../assets/logo.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../assets/logo.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+  <div class="card">
+    <img src="../assets/logo.png" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="page-footer font-small blue">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="/"> glodyfigueiredo.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+</div>
+
