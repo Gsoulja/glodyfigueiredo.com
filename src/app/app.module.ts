@@ -4,21 +4,31 @@ import { RouterModule,Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { SkillsComponent } from './skills/skills.component';
+import { WorkComponent } from './work/work.component';
+import { EducationComponent } from './education/education.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { HomeComponent } from './home/home.component';
+import { AppHeaderComponent } from './app-header/app-header.component';
+import { AppfootComponent } from './appfoot/appfoot.component';
 
-const appRoutes: Routes = [
-  
-];
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SkillsComponent,
+    WorkComponent,
+    EducationComponent,
+    ProjectsComponent,
+    HomeComponent,
+    AppHeaderComponent,
+    AppfootComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(appRoutes,{
-      useHash:true,
-      anchorScrolling : 'enabled'
-    })
+    RouterModule,
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

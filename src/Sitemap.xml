@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>http://www.glodyfigueiredo.com/</loc>
+
+      <lastmod>2023-04-23T20:08:30+00:00</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+     
+
+   </url>
+
+   <url>
+
+      <loc>http://www.glodyfigueiredo.com/home</loc>
+
+      <changefreq>monthly</changefreq>
+
+   </url>
+
+   <url>
+
+       <loc>http://www.glodyfigueiredo.com/skill</loc>
+
+      <lastmod>2023-04-23T20:08:30+00:00</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+   </url>
+
+   <url>
+
+       <loc>http://www.glodyfigueiredo.com/work</loc>
+
+      <lastmod>2023-04-23T20:08:30+00:00</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+   </url>
+
+   <url>
+
+       <loc>http://www.glodyfigueiredo.com/education</loc>
+
+      <lastmod>2023-04-23T20:08:30+00:00</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+   </url>
+    <url>
+
+       <loc>http://www.glodyfigueiredo.com/project</loc>
+
+      <lastmod>2023-04-23T20:08:30+00:00</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+</url>
+</urlset>

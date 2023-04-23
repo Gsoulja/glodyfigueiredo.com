@@ -1,0 +1,11 @@
+.navbar-nav > li{
+    margin-left:2%;
+    margin-right:2%;
+  }
+  .navbar-nav > li>button{
+    width: 150px!important;
+  }
+  .navbar-nav
+  {
+    margin-left: 20%;
+  }
