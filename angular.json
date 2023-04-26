@@ -19,7 +19,7 @@
           "options": {
             "customWebpackConfig": {
 
-              "path": "./webpack.config.js",
+              "path": "src/webpack.config.js",
               
               "replaceDuplicatePlugins": true
               

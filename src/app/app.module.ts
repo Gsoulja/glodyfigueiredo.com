@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { RouterModule,Routes } from '@angular/router';
 
@@ -11,6 +11,8 @@ import { ProjectsComponent } from './projects/projects.component';
 import { HomeComponent } from './home/home.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppfootComponent } from './appfoot/appfoot.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { NgOptimizedImage } from '@angular/common';
 
 
 @NgModule({
@@ -28,6 +30,13 @@ import { AppfootComponent } from './appfoot/appfoot.component';
     BrowserModule,
     AppRoutingModule,
     RouterModule,
+    NgOptimizedImage,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    }),
     
   ],
   providers: [],

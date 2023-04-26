@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
-
+import { NgOptimizedImage } from '@angular/common'
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',

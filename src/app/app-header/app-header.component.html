@@ -1,26 +1,24 @@
-<nav class="navbar navbar-expand-lg sticky-top bg-light" >
+<nav  #namebutton  class="  navbar navbar-expand-lg navbar-dark bg-dark " >
     <div class="container-fluid">
       <a class="navbar-brand" href=""><img src="../assets/logo.webp" class="img-fluid" alt="..."></a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" >
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <div class="collapse navbar-collapse" id="navbarNavDropdown" >
         <ul class="navbar-nav ">
           <li class="nav-item">
-            <button class="nav-link btn btn-outline-dark "  routerLinkActive="active" [routerLink]="['/home']" aria-current="home" >About me</button>
+            <button class="nav-link btn btn-outline-dark hidden-xs" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show"  routerLinkActive="active" [routerLink]="['/home']" aria-current="home" >About me</button>
+           
           </li>
           <li class="nav-item">
-            <button class="nav-link btn btn-outline-dark " routerLinkActive="active" [routerLink]="['/skill']"  >My Skills</button>
-          </li>
+            <button class="nav-link btn btn-outline-dark hidden-xs"  data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active" [routerLink]="['/skill']"  >My Skills</button> </li>
           <li class="nav-item">
-            <button class="nav-link btn btn-outline-dark "  routerLinkActive="active" [routerLink]="['/work']">Work Experience</button>
-          </li>
+            <button class="nav-link btn btn-outline-dark hidden-xs" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active" [routerLink]="['/work']">Work Experience</button> </li>
           <li class="nav-item">
-            <button class="nav-link btn btn-outline-dark " routerLinkActive="active"  [routerLink]="['/education']" >Education</button>
-          </li>
+            <button class="nav-link btn btn-outline-dark hidden-xs" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active"  [routerLink]="['/education']" >Education</button> </li>
           <li class="nav-item">
-            <button class="nav-link btn btn-outline-dark "routerLinkActive="active" [routerLink]="['/project']"   >Personal Projects</button>
-          </li>
+            <button class="nav-link btn btn-outline-dark hidden-xs" data-bs-toggle="collapse" data-bs-target=".navbar-collapse.show" routerLinkActive="active" [routerLink]="['/project']"   >Personal Projects</button>
+           </li>
           
         </ul>
       </div>
